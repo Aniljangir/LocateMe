@@ -27,4 +27,21 @@ void main() {
     expect(find.text('test'), findsNothing);
     expect(find.text('India'), findsOneWidget);
   });
+  testWidgets('List Screen Widget test', (WidgetTester tester) async {
+    // Build our app and trigger a frame.
+    await tester.pumpWidget(const MyApp());
+
+    // Tap the menu icon and move to list screen.
+    await tester.tap(find.byIcon(Icons.menu));
+    await tester.pump();
+
+    // Verify that in list screen data is showing.
+    expect(find.text('India'), findsOneWidget);
+
+    await tester.tap(find.text("India"));
+    await tester.pump(const Duration(seconds: 2));
+
+    expect(find.byIcon(Icons.menu), findsOneWidget);
+  });
+
 }
