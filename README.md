@@ -1,16 +1,21 @@
-# locate_me
+# LocateMe
 
-A new Flutter project.
+A Google Map project.
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
+ For setup needs to provide google map api key. follow below steps 
 
-A few resources to get you started if this is your first Flutter project:
+Get an API key at https://cloud.google.com/maps-platform/.
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+Enable Google Map SDK for each platform.
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Go to [Google Developers Console.](Google Developers Console)
+Choose the project that you want to enable Google Maps on.
+Select the navigation menu and then select "Google Maps".
+Select "APIs" under the Google Maps menu.
+To enable Google Maps for Android, select "Maps SDK for Android" in the "Additional APIs" section, then select "ENABLE".
+To enable Google Maps for iOS, select "Maps SDK for iOS" in the "Additional APIs" section, then select "ENABLE".
+To enable Google Maps for Web, enable the "Maps JavaScript API".
+Make sure the APIs you enabled are under the "Enabled APIs" section.
+
