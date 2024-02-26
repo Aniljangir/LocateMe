@@ -27,5 +27,6 @@ class MapView extends BaseStateLess {
         cubit.completeMap(controller);
       },
     );
+
   }
 }
